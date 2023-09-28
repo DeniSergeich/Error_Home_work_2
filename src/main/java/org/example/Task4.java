@@ -11,10 +11,10 @@ public class Task4 {
 
         try {
             String string = scanner.nextLine();
-            if (string.equals("")) throw new RuntimeException();
+            if (string.equals("")) throw new RuntimeException("Строка не может быть пустой!");
         }
         catch (RuntimeException e) {
-            throw new RuntimeException("Строка не может быть пустой!");
+            e.printStackTrace();
         }
     }
 }
